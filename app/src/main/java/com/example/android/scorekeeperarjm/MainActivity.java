@@ -23,6 +23,44 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
     }
 
+    @Override
+    protected void onSaveInstanceState(Bundle outState) {
+        outState.putInt("goalsArg", goalsArg);
+        outState.putInt("yellowsArg", yellowsArg);
+        outState.putInt("redsArg", redsArg);
+        outState.putInt("foulsArg", foulsArg);
+        outState.putInt("goalsJam", goalsJam);
+        outState.putInt("yellowsJam", yellowsJam);
+        outState.putInt("redsJam", redsJam);
+        outState.putInt("foulsJam", foulsJam);
+        super.onSaveInstanceState(outState);
+    }
+
+    @Override
+    protected void onRestoreInstanceState(Bundle savedInstanceState) {
+        goalsArg = savedInstanceState.getInt("goalsArg");
+        yellowsArg = savedInstanceState.getInt("yellowsArg");
+        redsArg = savedInstanceState.getInt("redsArg");
+        foulsArg = savedInstanceState.getInt("foulsArg");
+        goalsJam = savedInstanceState.getInt("goalsJam");
+        yellowsJam = savedInstanceState.getInt("yellowsJam");
+        redsJam = savedInstanceState.getInt("redsJam");
+        foulsJam = savedInstanceState.getInt("foulsJam");
+
+        displayGoalsArg(goalsArg);
+        displayYellowsArg(yellowsArg);
+        displayRedsArg(redsArg);
+        displayFoulsArg(foulsArg);
+        displayGoalsJam(goalsJam);
+        displayYellowsJam(yellowsJam);
+        displayRedsJam(redsJam);
+        displayFoulsJam(foulsJam);
+        
+        displayPain();
+
+        super.onRestoreInstanceState(savedInstanceState);
+    }
+
     public void addGoalForArg(View view) {
         goalsArg++;
         displayGoalsArg(goalsArg);
