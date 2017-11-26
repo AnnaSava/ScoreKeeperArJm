@@ -55,7 +55,7 @@ public class MainActivity extends AppCompatActivity {
         displayYellowsJam(yellowsJam);
         displayRedsJam(redsJam);
         displayFoulsJam(foulsJam);
-        
+
         displayPain();
 
         super.onRestoreInstanceState(savedInstanceState);

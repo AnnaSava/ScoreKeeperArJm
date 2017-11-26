@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Score Keeper</string>
+    <string name="argentina">Аргентина</string>
+    <string name="jamaica">Ямайка</string>
+    <string name="goal">Гол</string>
+    <string name="foul">Фол</string>
+    <string name="yellow">Желтая</string>
+    <string name="red">Красная</string>
+    <string name="reset">Сброс</string>
+    <string name="pain">Какая боль! Какая боль!</string>
 </resources>

@@ -24,10 +24,10 @@
             android:background="#ff4646"
             android:gravity="center_horizontal"
             android:padding="8dp"
-            android:text="Какая боль! Какая боль!"
+            android:text="@string/pain"
             android:textAllCaps="true"
             android:textColor="#fff"
-            android:textSize="22dp"
+            android:textSize="22sp"
             android:visibility="invisible" />
 
         <LinearLayout
@@ -42,9 +42,9 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
-                android:text="Аргентина"
+                android:text="@string/argentina"
                 android:textColor="#ddd"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
 
             <TextView
                 android:layout_width="0dp"
@@ -52,9 +52,9 @@
                 android:layout_weight="1"
                 android:gravity="center_horizontal"
                 android:padding="8dp"
-                android:text="Ямайка"
+                android:text="@string/jamaica"
                 android:textColor="#ddd"
-                android:textSize="18dp" />
+                android:textSize="18sp" />
         </LinearLayout>
 
         <LinearLayout
@@ -239,25 +239,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addGoalForArg"
-                    android:text="Гол" />
+                    android:text="@string/goal" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addYellowForArg"
-                    android:text="Желтая" />
+                    android:text="@string/yellow" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addRedForArg"
-                    android:text="Красная" />
+                    android:text="@string/red" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addFoulForArg"
-                    android:text="Фол" />
+                    android:text="@string/foul" />
             </LinearLayout>
 
             <LinearLayout
@@ -272,25 +272,25 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addGoalForJam"
-                    android:text="Гол" />
+                    android:text="@string/goal" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addYellowForJam"
-                    android:text="Желтая" />
+                    android:text="@string/yellow" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addRedForJam"
-                    android:text="Красная" />
+                    android:text="@string/red" />
 
                 <Button
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:onClick="addFoulForJam"
-                    android:text="Фол" />
+                    android:text="@string/foul" />
             </LinearLayout>
 
         </LinearLayout>
@@ -303,5 +303,5 @@
         android:layout_centerInParent="true"
         android:layout_marginBottom="4dp"
         android:onClick="resetScore"
-        android:text="Сброс" />
+        android:text="@string/reset" />
 </RelativeLayout>
